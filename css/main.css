@@ -1,0 +1,339 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #B8AFAF;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background: url(../img/common/bkgdMainTile.png);
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    border: 0;
+    margin:0;
+    padding: 0;
+    background:url(../img/common/bkgdHorizLines.png) repeat-x;
+    height:13px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.phark
+{
+    display: block;
+    text-indent: -3000px;
+}
+
+/* ===============
+IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* =================================
+Main Nav
+===================================*/
+#mainNav ul
+{
+    text-align: center;
+    overflow: hidden;
+    margin:0 auto;
+    padding:0;
+}
+
+#mainNav li{
+    display:inline;
+}
+#mainNav a
+{
+    width: 15%;
+    margin:0 5%;
+    color:#B8AFAF;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:bold;
+    -webkit-transition:color 0.5s ease-in;
+    -moz-transition:color 0.5s ease-in;
+    -ms-transition:color 0.5s ease-in;
+    transition:color 0.5s ease-in;
+}
+
+#mainNav a:hover, #mainNav a.active
+{
+    color:#e9e9e9;
+    -webkit-transition:color 0.5s ease-in;
+    -moz-transition:color 0.5s ease-in;
+    -ms-transition:color 0.5s ease-in;
+    transition:color 0.5s ease-in;
+}
+
+/* ==========================================================================
+Intro Legal Page
+========================================================================= */
+#introContainer
+{
+    margin:0 auto;
+    width:80%;
+    padding-top:10%;
+    text-align: center;
+    background: url(../img/common/bkgdMainTile.png);
+}
+
+#introContainer h1, #home h1
+{
+    margin:0 auto;
+    background:url(../img/common/logoRevolverBrewing.png);
+    width:195px;
+    height:249px;
+}
+
+#introContainer p
+{
+    color:#B8AFAF;
+    font-size:1.6em;
+    text-shadow: 0 1px #333;
+    text-transform: uppercase;
+}
+
+#introContainer a
+{
+    background:url(../img/buttons/btnEnter.png);
+    -webkit-transition:background 0.5s ease-in;
+    -moz-transition:background 0.5s ease-in;
+    -ms-transition:background 0.5s ease-in;
+    transition:background 0.5s ease-in;
+    margin:0 auto;
+    width:225px;
+    height:35px;
+}
+
+#introContainer a:hover
+{
+    -webkit-transition:background 0.5s ease-in;
+    -moz-transition:background 0.5s ease-in;
+    -ms-transition:background 0.5s ease-in;
+    transition:background 0.5s ease-in;
+    background: url(../img/buttons/btnEnterHover.png);
+}
+
+/* =============================
+Home
+============================== */
+#home
+{
+    display:none;
+    width:80%;
+    margin:5% auto 0 auto;
+}
+
+#home header h1
+{
+    margin-bottom:10px;
+}
+
+#home h2
+{
+    color:#d94f00;
+    font-size:2.7em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    #mainNav a
+    {
+        font-size: 1.6em;
+        width:18%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
